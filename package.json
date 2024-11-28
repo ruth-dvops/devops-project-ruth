@@ -4,6 +4,7 @@
   "description": "part1",
   "main": "index.js",
   "scripts": {
+    "clean-nyc": "rimraf .nyc_output",
     "backend-test": "nyc --nycrc-path .nycrc-backend mocha"
   },
   "keywords": [],
@@ -20,5 +21,8 @@
     "mongodb": "^6.10.0",
     "mongoose": "^8.8.0",
     "nyc": "^17.1.0"
+  },
+  "devDependencies": {
+    "rimraf": "^6.0.1"
   }
 }

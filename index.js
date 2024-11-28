@@ -31,7 +31,7 @@ const { viewJobs } = require('./utils/view-job');
 app.get('/view-jobs', viewJobs);
 
 const { applyjob } = require('./utils/applyjob');
-app.post('/apply-job/:jobId', applyjob);
+app.post('/apply-job', applyjob);
  
 app.get('/', (req, res) => {
     res.sendFile(__dirname + "/public/index.html");
