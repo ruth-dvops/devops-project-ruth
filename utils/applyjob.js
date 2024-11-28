@@ -5,23 +5,23 @@ async function applyjob(req, res) {
         const { name, age, education, phone, email } = req.body;
 
         if (!name) {
-            return res.status(400).json({ message: 'Name is required!' });
+            return res.status(400).json({ message: 'Name is required' });
         }
 
         if (!age) {
-            return res.status(400).json({ message: 'Age is required!' });
+            return res.status(400).json({ message: 'Age is required' });
         }
 
         if (!education) {
-            return res.status(400).json({ message: 'Education is required!' });
+            return res.status(400).json({ message: 'Education is required' });
         }
 
         if (!phone) {
-            return res.status(400).json({ message: 'Phone number is required!' });
+            return res.status(400).json({ message: 'Phone number is required' });
         }
 
         if (!email) {
-            return res.status(400).json({ message: 'Email is required!' });
+            return res.status(400).json({ message: 'Email is required' });
         }
 
         // Validate name (no special characters or numbers allowed)
