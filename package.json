@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "clean-nyc": "rimraf .nyc_output",
-    "backend-test": "nyc --nycrc-path .nycrc-backend mocha"
+    "backend-test": "nyc --nycrc-path .nycrc-backend mocha --exit"
   },
   "keywords": [],
   "author": "",
